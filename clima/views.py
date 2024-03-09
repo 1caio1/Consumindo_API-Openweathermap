@@ -12,9 +12,22 @@ class Climaview(APIView):
         # url
         url = f'http://api.openweathermap.org/data/2.5/weather?q={cidade}&appid={chave_da_api}&units=metric'
         response = requests.get(url)
-        return response.json()
+        dados = response.json()
+
+        return dados
     # retorna os dados da api
 
     def get(self, request, city):
-        data = self.get_clima(city)
+        dados = self.get_clima(city)
+        temperatura = dados.get('main','').get('temp')
+        temperaturaMaxima = dados.get('main','').get('temp_max')
+        temperaturaMinima = dados.get('main','').get('temp_min')
+
+        # cria um dicionario
+        data = {
+            'temperatura' : temperatura,
+            'temperatura_maxima': temperaturaMaxima,
+            'temperatura_minima': temperaturaMinima
+        }
+
         return Response(data)
