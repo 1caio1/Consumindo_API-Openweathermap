@@ -29,5 +29,7 @@ class TempoViewset(viewsets.ModelViewSet):
         }
         serialize = PrevisaodoTempoSerializer(data=recebido)
         if serialize.is_valid():
-            serialize.save()
-            return response(serialize.data, status=status.HTTP_201_CREATED)
+           
+            return Response(serialize.data, status=status.HTTP_201_CREATED)
+        else:
+            return Response(serialize.errors, status=status.HTTP_400_BAD_REQUEST)
