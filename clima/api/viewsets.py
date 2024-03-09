@@ -15,6 +15,7 @@ class TempoViewset(viewsets.ModelViewSet):
         chave_da_api = '8fb56de87ff0a40e6b526e4ed0c15dcb'  # chave da api
         # url
         url = f'http://api.openweathermap.org/data/2.5/weather?q={cidade}&appid={chave_da_api}&units=metric'
+      
         response = requests.get(url)
         dados = response.json()
         name = dados.get('name', '')
