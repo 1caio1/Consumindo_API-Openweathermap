@@ -1,9 +1,8 @@
 from rest_framework import serializers
-from .models import PrevisaodoTempo
+from clima import models
 
 
 class PrevisaodoTempoSerializer(serializers.ModelSerializer):
-    class Meta: 
-        model = PrevisaodoTempo
-        fields = ['temperatura', 'temperatura_maxima', 'temperatura_minima']
-
+    class Meta:
+        model = models.PrevisaodoTempo
+        fields = '__all__'

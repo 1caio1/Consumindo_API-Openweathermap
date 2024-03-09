@@ -30,4 +30,5 @@ class Climaview(APIView):
             'temperatura_minima': temperaturaMinima
         }
 
+       
         return Response(data)
