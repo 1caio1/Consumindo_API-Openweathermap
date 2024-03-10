@@ -3,7 +3,7 @@ from .serializers import PrevisaodoTempoSerializer
 from ..models import PrevisaodoTempo
 import requests
 from rest_framework.response import Response
-from rest_framework import status
+
 
 
 class TempoViewset(viewsets.ModelViewSet):
@@ -21,9 +21,9 @@ class TempoViewset(viewsets.ModelViewSet):
         dados = respostas.json()
         #dados captados para api
         name = dados.get('name', '')
-        temperatura = dados.get('temp', '')
-        temperaturaMaxima = dados.get('temp_max',  '')
-        temperaturaMinima = dados.get('temp_min', '')
+        temperatura = dados.get('main', '').get('temp')
+        temperaturaMaxima = dados.get('main', '').get('temp_max')
+        temperaturaMinima = dados.get('main', '').get('temp_min')
         
         #referenciando json
         recebido = {
@@ -36,7 +36,6 @@ class TempoViewset(viewsets.ModelViewSet):
         serialize = PrevisaodoTempoSerializer(data=recebido)
         if serialize.is_valid():
             serialize.save()
-           
-            return Response(serialize.data, status=status.HTTP_201_CREATED)
+            return Response(serialize.data)
         else:
-            return Response(serialize.errors, status=status.HTTP_400_BAD_REQUEST)
+            return Response(serialize.errors)
