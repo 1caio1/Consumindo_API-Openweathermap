@@ -1,6 +1,6 @@
 # Desafio Fabrica de Software 2024
 
-<h3>📝 Consumindo API de climas com Django REST Frame Work</h3>
+<h3>📝 Consumindo API de temperatura com Django REST Frame Work</h3>
 <br>
 
 
