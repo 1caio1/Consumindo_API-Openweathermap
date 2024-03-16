@@ -52,7 +52,7 @@ Utilizando o caminho http://127.0.0.1:8000/clima/ {nome da cidade}/ no insomnia,
     <li>Projeto realizado em Django REST FrameWork</li>
     <li>Nome do Projeto: previsaodotempo</li>
     <li>Nome do app: clima</li>
-    <li>Utilizando banco de dados local Sqllite3</li>
+    <li>Utilizando banco de dados MySql</li>
    
 </ul>
 <br>
