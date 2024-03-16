@@ -4,7 +4,7 @@
 <br>
 
 
-<b>Neste Projeto utilizei a API Openweathermap que retorna a partir do nome da cidade, sua temperatura.</b><br><br>
+<b>Neste Projeto utilizei a API Openweathermap que retorna a partir do nome da cidade, sua temperatura.</b><br>
 <h3>Como Usar:</h3>
 
 <h3>Get</h3>
