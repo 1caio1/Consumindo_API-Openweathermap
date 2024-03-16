@@ -9,7 +9,7 @@
 <br>
 <h3>Get</h3>
 <b>
-Utilizando o caminho http://127.0.0.1:8000/clima/{nome da cidade}/ no insomnia, ira retornar o seguinte json
+Utilizando o caminho http://127.0.0.1:8000/clima/ {nome da cidade}/ no insomnia, ira retornar o seguinte json
 <br>
 <br>
 
@@ -34,11 +34,11 @@ Utilizando o caminho http://127.0.0.1:8000/clima/{nome da cidade}/ no insomnia, 
 
  <h3>Put</h3>
  <b>
- Utilizando o caminho http://127.0.0.1:8000/api/clima/{id de qual deseja editar}/ no insomnia, utilize a opção json para editar.
+ Utilizando o caminho http://127.0.0.1:8000/api/clima/ {id de qual deseja editar}/ no insomnia, utilize a opção json para editar.
  </b>
  <h3>Delete</h3>
 
- <b> Utilizando o caminho http://127.0.0.1:8000/api/clima/{id de qual deseja apagar}/ no insomnia</b>
+ <b> Utilizando o caminho http://127.0.0.1:8000/api/clima/ {id de qual deseja apagar}/ no insomnia</b>
 <br>
 <br>
 <b>  API utilizada Openweathermap</b>
