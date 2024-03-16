@@ -5,14 +5,39 @@
 
 
 <b>Neste Projeto utilizei a API Openweathermap que retorna a partir do nome da cidade, sua temperatura.</b><br><br>
-<b>Utilizando o caminho http://127.0.0.1:8000/api/clima/ no insomnia, adicione no campo 'name' a palavra 'cidade' e em 'value' adicione a cidade da busca que deseja, ira retornar o seguinte Json: <br>
+<h3>Como Usar</h3>
+<br>
+<h3>Get</h3>
+<b>
+Utilizando o caminho http://127.0.0.1:8000/clima/{nome da cidade}/ no insomnia, ira retornar o seguinte json
+<br>
+<br>
+
+	"temperatura": 11.44,
+	"temperatura_maxima": 12.32,
+	"temperatura_minima": 10.59
+
+</b>
+<br>
+<h3>Post</h3>
+<b>Utilizando o caminho http://127.0.0.1:8000/api/clima/ no insomnia, adicione no campo 'name' a palavra 'cidade' e em 'value' adicione a cidade da busca que deseja, ira retornar o seguinte Json: <br><br>
 
 
-	"cidade": "São Paulo",
-	"temperatura": "25.44",
-	"temperatura_maxima": "26.2",
-	"temperatura_minima": "24.75"
+	"id": 1,
+	"cidade": "Paris",
+	"temperatura": "11.44",
+	"temperatura_maxima": "12.32",
+	"temperatura_minima": "10.59",
+	"data": "2024-03-16T01:16:45.541888Z"
+
  </b>
+
+ <h3>Put</h3>
+ <b>
+ Utilizando o caminho http://127.0.0.1:8000/api/clima/{id de qual deseja editar}/ no insomnia, utilize a opção json para editar.
+ </b>
+ <h3>Delete</h3>
+ <b> Utilizando o caminho http://127.0.0.1:8000/api/clima/{id de qual deseja apagar}/ no insomnia</b>
 <br>
 <b>  API utilizada Openweathermap</b>
 <ul>
