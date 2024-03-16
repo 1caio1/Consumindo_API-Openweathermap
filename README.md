@@ -37,7 +37,9 @@ Utilizando o caminho http://127.0.0.1:8000/clima/{nome da cidade}/ no insomnia, 
  Utilizando o caminho http://127.0.0.1:8000/api/clima/{id de qual deseja editar}/ no insomnia, utilize a opção json para editar.
  </b>
  <h3>Delete</h3>
+
  <b> Utilizando o caminho http://127.0.0.1:8000/api/clima/{id de qual deseja apagar}/ no insomnia</b>
+<br>
 <br>
 <b>  API utilizada Openweathermap</b>
 <ul>
