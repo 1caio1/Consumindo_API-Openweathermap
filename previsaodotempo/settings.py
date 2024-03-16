@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'previsaodotempo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'climadjango',
+        'NAME': 'clima',
         'USER': 'root',
         'PASSWORD': '8020',
         'HOST': 'localhost',

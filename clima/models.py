@@ -8,6 +8,7 @@ class PrevisaodoTempo(models.Model):
     temperatura = models.CharField(max_length=255, blank=True)
     temperatura_maxima = models.CharField(max_length=255, blank=True)
     temperatura_minima = models.CharField(max_length=255, blank=True)
+    data = models.DateTimeField(auto_now_add=True, null=True, blank=True)
     
     def str(self) -> str:
         return f"{self.cidade} {self.temperatura} {self.temperatura_maxima} {self.temperatura_minima}"
